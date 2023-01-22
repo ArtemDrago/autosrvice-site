@@ -1,0 +1,61 @@
+.stocks-container {
+   width: 100%;
+   flex-direction: column;
+   display: flex;
+   padding-bottom: 180px;
+   padding-top: 10px;
+   color: #2C2C2C;
+}
+
+.stocks-title {
+   font-size: 67px;
+   line-height: 95%;
+   letter-spacing: -0.03em;
+   margin-bottom: 60px;
+}
+
+.stocks-controls {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+
+.stocks-btn {
+   padding: 20px 40px;
+   background: #FEC110;
+   border-radius: 7px;
+   display: none;
+
+   &:hover {
+      background: #fec210be;
+   }
+}
+
+@media (max-width:1430px) {
+   .stocks-btn {
+      display: block;
+   }
+
+   .stocks-container {
+      padding-bottom: 0px;
+   }
+}
+
+@media (max-width:950px) {
+   .stocks-title {
+      font-size: 44px;
+      line-height: 95%;
+   }
+}
+
+@media (max-width:530px) {
+   .stocks-title {
+      font-size: 34px;
+   }
+
+   .stocks-btn {
+      padding: 15px 20px;
+      font-size: 16px;
+      line-height: 125%;
+   }
+}

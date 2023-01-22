@@ -1,0 +1,79 @@
+.consultation-container {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   background: url('../../../sorce/img/consultation.png') center top no-repeat;
+   background-size: cover;
+}
+
+.consultation-content {
+   padding: 180px 0;
+}
+
+.consultation-info {
+   width: 100%;
+   padding-top: 10px;
+   border-top: 1px solid #fff;
+}
+
+.consultation-take {
+   color: white;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 200%;
+   letter-spacing: 0.02em;
+   text-transform: uppercase;
+   width: 100%;
+   margin-bottom: 60px;
+}
+
+.consultation-box {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.boxInfo {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding-left: 20px;
+   width: 50%;
+}
+
+.box-consultationText {
+   font-size: 28px;
+   line-height: 120%;
+   letter-spacing: -0.02em;
+   color: #FFFFFF;
+   margin-bottom: 40px;
+}
+
+@media (max-width:1024px) {
+   .consultation-content {
+      padding: 120px 0;
+   }
+
+   .boxInfo {
+      padding: 0;
+      width: 100%;
+   }
+
+   .consultation-take {
+      margin-bottom: 40px;
+   }
+
+   .box-consultationText {
+      font-size: 24px;
+      line-height: 120%;
+   }
+}
+
+@media (max-width:600px) {
+   .consultation-content {
+      padding: 40px 0;
+   }
+
+   .box-consultationText {
+      font-size: 21px;
+   }
+}

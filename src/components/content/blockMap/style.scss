@@ -1,0 +1,155 @@
+.map-container {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.map-contentContainer {
+   width: 100%;
+   height: 100%;
+   background: white;
+   margin-top: -312px;
+   margin-bottom: 130px;
+   display: flex;
+}
+
+.map-content {
+   display: flex;
+   flex-direction: column;
+   flex: 1 1 37%;
+}
+
+.contentMap-img {
+   width: 100%;
+   display: flex;
+   height: 312px;
+   position: relative;
+}
+
+.contentMap-adress {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 18px;
+}
+
+.adress-text {
+   font-size: 16px;
+   line-height: 120%;
+   color: white;
+}
+
+.contentMap-info {
+   display: flex;
+   flex-direction: column;
+   padding: 40px;
+   background: #313232;
+}
+
+.service-text {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.service-title {
+   color: white;
+   font-size: 16px;
+   line-height: 140%;
+}
+
+.service-link {
+   text-decoration: none;
+   color: #FEC110;
+
+   &:hover {
+      color: #fec210cf;
+   }
+}
+
+.contentMap-serv {
+   margin-bottom: 40px;
+}
+
+.contentMap-btnContainer {
+   display: flex;
+   justify-content: flex-start;
+}
+
+.map-map {
+   display: flex;
+   width: 63%;
+   position: relative;
+
+}
+
+
+[class*="copyrights-pane"] {
+   display: none !important;
+}
+
+[class*="ground-pane"] {
+   filter: grayscale(1);
+}
+
+.map-zoomBtn {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   font-size: 12px;
+   background-color: #fff;
+   border: 1.5px solid #2C2C2C;
+
+   &:last-child {
+      margin-top: 5px;
+   }
+}
+
+.zoom-container {
+   position: absolute;
+   right: 20px;
+   bottom: 20px;
+   display: flex;
+   flex-direction: column;
+}
+
+@media (max-width:1315px) {
+   .contentMap-img {
+      display: none;
+   }
+
+   .contentMap-info {
+      padding: 20px 0px 40px 0px;
+   }
+
+   .map-container {
+      background-color: #313232;
+   }
+
+   .map-contentContainer {
+      width: 100%;
+      height: 100%;
+      background: white;
+      margin: 0;
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .map-map {
+      height: 464px;
+      min-width: 100vw;
+      margin-left: -130px;
+   }
+}
+
+@media (max-width:1024px) {
+   .map-map {
+      margin-left: -52px;
+
+   }
+}
+
+@media (max-width:460px) {
+   .map-map {
+      margin-left: -15px;
+   }
+}

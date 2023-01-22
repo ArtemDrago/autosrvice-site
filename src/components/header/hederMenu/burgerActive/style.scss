@@ -1,0 +1,427 @@
+.content-burger {
+   position: absolute;
+   left: 0;
+   top: 70px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 40px 130px;
+   border-top: 1px solid #FEC110;
+   z-index: 3;
+   background-color: #fff;
+}
+
+.contact-burger {
+   width: 428px;
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+   justify-content: flex-start;
+   height: 100%;
+   position: relative;
+
+   &:nth-child(3) {
+      margin-left: 15px;
+      align-items: flex-start;
+      margin-right: calc(352px - 130px);
+   }
+}
+
+.burger-phone {
+   font-weight: 400;
+   font-size: 38px;
+   line-height: 110%;
+   letter-spacing: -0.015em;
+   color: #FEC110;
+   margin-bottom: 20px;
+}
+
+.burger-mail {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 21px;
+   line-height: 120%;
+   text-decoration-line: underline;
+   color: #2C2C2C;
+   margin-bottom: 20px;
+
+   &:hover {
+      color: #FEC110;
+   }
+}
+
+.burger-inform {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 140%;
+   color: #989898;
+   margin-bottom: 149px;
+}
+
+.social {
+   display: flex;
+}
+
+.info {
+   margin-bottom: 10px;
+}
+
+.inform-title {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 200%;
+   letter-spacing: 0.02em;
+   text-transform: uppercase;
+   color: #2C2C2C;
+}
+
+.inform-content {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 140%;
+   color: #989898;
+}
+
+.social-item {
+   margin-top: 30px;
+   cursor: pointer;
+   width: 60px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   border: 1px solid #313232;
+   margin-right: 10px;
+
+   &:last-child {
+      margin-right: 0;
+   }
+
+   &:hover {
+      background-color: #FEC110;
+   }
+}
+
+.autoservices {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 21px;
+   line-height: 120%;
+   letter-spacing: -0.01em;
+   color: #989898;
+}
+
+.serv-list {
+   display: flex;
+   flex-direction: column;
+
+   a {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #2C2C2C;
+      text-decoration: none;
+      margin-bottom: 12px;
+
+      &:last-child {
+         margin-bottom: 2px;
+      }
+   }
+}
+
+hr {
+   width: 100%;
+   margin: 20px 0;
+}
+
+.link-person {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   height: 25px;
+   margin-bottom: 220px;
+
+   &:hover {
+      color: #FEC110;
+   }
+}
+
+.confidentially1 {
+   display: none;
+}
+
+.mini-menu {
+   display: none;
+}
+
+a {
+   &:hover {
+      color: #FEC110;
+   }
+}
+
+@media (max-width:1280px) {
+   .contact-burger {
+      &:nth-child(3) {
+         margin-right: 100px;
+      }
+   }
+}
+
+@media (max-width:1024px) {
+   .content-burger {
+      flex-direction: column;
+      padding: 35px 52px;
+   }
+
+   .contact-burger {
+      width: 100%;
+      order: 3;
+
+      &:nth-child(2) {
+         order: 2;
+         margin-left: 0;
+         margin-right: 0;
+      }
+
+      &:nth-child(3) {
+         order: 1;
+         margin-left: 0;
+         margin-right: 0;
+      }
+   }
+
+   .list-items {
+      display: flex;
+      align-items: left;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #2C2C2C;
+   }
+
+   .column {
+      display: flex;
+      flex: 1 1 50%;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .mini-list {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 110%;
+      letter-spacing: -0.01em;
+      color: #2C2C2C;
+      margin-bottom: 20px;
+
+      &:hover {
+         color: #FEC110;
+      }
+   }
+
+   .contacts {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   .link-person {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 110%;
+      text-align: right;
+      letter-spacing: -0.01em;
+      color: #2C2C2C;
+      margin-top: 10px;
+      margin-bottom: 40px;
+
+      &_text {
+         &:hover {
+            color: #FEC110;
+         }
+      }
+   }
+
+   .burger-inform {
+      margin-bottom: 20px;
+   }
+
+   .inform-title {
+      font-size: 10px;
+   }
+
+   .social-item {
+      margin: 20px 0;
+      width: 50px;
+      height: 50px;
+
+      margin-right: 10px;
+
+      &:last-child {
+         margin-right: 0;
+      }
+
+      &:hover {
+         background-color: #FEC110;
+      }
+   }
+
+   .confidentially {
+      display: none;
+   }
+
+   .confidentially1 {
+      display: block;
+      order: 3;
+      width: 100%;
+      text-align: left;
+      margin-bottom: calc(87px - 35px);
+   }
+
+   .autoservices {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 110%;
+      letter-spacing: -0.01em;
+      color: #989898;
+   }
+
+   .mini-menu {
+      width: 100%;
+      display: block;
+   }
+
+   .services-list {
+      padding: 10px 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      border-bottom: 1px solid #2C2C2C;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+   }
+
+   .serv-block {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      align-items: left;
+      justify-content: space-between;
+   }
+
+   .services-column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      flex: 1 1 50%;
+   }
+
+   .services-elem {
+      margin-bottom: 12px;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #2C2C2C;
+
+      &:hover {
+         color: #FEC110;
+      }
+   }
+
+   .serv-list {
+      width: 100%;
+      margin-top: 20px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid #2C2C2C;
+   }
+
+   hr {
+      display: none;
+   }
+}
+
+@media (max-width:575px) {
+   .content-burger {
+      padding: 25px 15px 10px 15px;
+   }
+
+   .mini-list {
+      font-size: 18px;
+      line-height: 120%;
+      margin-bottom: 10px;
+   }
+
+   .autoservices {
+      font-size: 18px;
+      line-height: 120%;
+      margin-bottom: 10px;
+   }
+
+   .serv-block {
+      margin-top: 0;
+   }
+
+   .serv-list {
+      margin-top: 10px;
+   }
+
+   .link-person {
+      font-size: 18px;
+      line-height: 120%;
+
+   }
+
+   .burger-phone {
+      font-size: 24px;
+      line-height: 110%;
+      margin-bottom: 10px;
+   }
+
+   .burger-mail {
+      font-size: 18px;
+      line-height: 120%;
+      margin-bottom: 10px;
+   }
+
+   .burger-inform {
+      font-size: 14px;
+      line-height: 140%;
+      margin-bottom: 20px;
+   }
+
+   .inform-title {
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 200%;
+      margin-bottom: 0;
+   }
+
+   .inform-content {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      margin-bottom: 0px;
+   }
+
+   .social-item {
+      margin: 10px 5px 10px 0px;
+   }
+
+   .confidentially1 {
+      margin: 10px 0;
+   }
+}

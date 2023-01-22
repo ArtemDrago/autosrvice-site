@@ -1,0 +1,38 @@
+.mark {
+   width: 100%;
+   height: 300px;
+   background-color: rgb(232, 231, 231) !important;
+   position: relative;
+   margin-bottom: 180px;
+}
+
+.mark-img {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: left;
+}
+
+@media (max-width:900px) {
+   .mark {
+      height: 230px;
+      margin-bottom: 125px;
+   }
+}
+
+@media (max-width:460px) {
+   .mark {
+      height: 190px;
+      margin-bottom: 105px;
+   }
+}
+
+@media (min-width:1601px) {
+   .mark {
+      max-width: 1600px;
+      height: 300px;
+   }
+}

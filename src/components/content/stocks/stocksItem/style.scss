@@ -1,0 +1,157 @@
+.container-stocksCarusel {
+   width: 100%;
+   display: flex;
+   padding-bottom: 180px;
+}
+
+.carousel-boxControl {
+   width: 65.67%;
+   height: 100%;
+   position: relative;
+}
+
+.stocksControl-control {
+   display: flex;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   transform: translateX(calc(100% + 40px));
+}
+
+.containerStocks-controll {
+   display: flex;
+   flex: 1 1 34.33%;
+   padding-left: 35px;
+   flex-direction: column;
+}
+
+.stocksControl-title {
+   font-size: 51px;
+   line-height: 105%;
+   letter-spacing: -0.02em;
+   padding-right: 40px;
+   margin-bottom: 20px;
+}
+
+.stocksControl-data {
+   font-size: 16px;
+   line-height: 140%;
+   color: #989898;
+   margin-bottom: 40px;
+}
+
+.stocksControl-detailed {
+   display: flex;
+   width: 100%;
+   align-items: center;
+   cursor: pointer;
+   margin-bottom: 150px;
+
+   &:hover {
+      .detailed-text {
+         color: #fec210d2;
+      }
+
+      .detailed-btn {
+         background: #fec210d2;
+      }
+   }
+}
+
+.detailed-text {
+   font-size: 15px;
+   line-height: 18px;
+}
+
+.detailed-btn {
+   margin-right: 10px;
+   background: #FEC110;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+
+.stocksControl-button {
+   border: 1px solid #313232;
+
+   &:first-child {
+      margin-right: 5px;
+   }
+
+   &:hover {
+      background-color: #fec21088;
+   }
+}
+
+@media (max-width:1555px) {
+   .stocksControl-title {
+      font-size: 45px;
+   }
+}
+
+@media (max-width:1430px) {
+   .container-stocksCarusel {
+      flex-direction: column;
+      padding-bottom: 120px;
+   }
+
+   .carousel-boxControl {
+      width: 100%;
+   }
+
+   .stocksControl-control {
+      display: flex;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      transform: translateY(-10px);
+   }
+
+   .stocksControl-button {
+      border: none;
+      background-color: #FEC110;
+
+      &:hover {
+         background-color: #fec210d8;
+      }
+   }
+
+   .stocksControl-detailed {
+      margin-bottom: 0px;
+   }
+
+   .stocks-carousel {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 40px;
+   }
+
+   .containerStocks-controll {
+      flex: 1 1 100%;
+      padding-left: 0px;
+   }
+}
+
+@media (max-width:950px) {
+   .stocksControl-title {
+      font-size: 38px;
+      line-height: 105%;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-width:530px) {
+   .container-stocksCarusel {
+      padding-bottom: 100px;
+   }
+
+   .stocksControl-title {
+      font-size: 28px;
+   }
+}

@@ -1,0 +1,141 @@
+@import './burger.scss';
+$color: #FEC110;
+
+
+.menu {
+   display: flex;
+}
+
+.menu-items {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.menu-item {
+   padding: 26px 20px;
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   font-size: 15px;
+   border: none;
+   outline: none;
+   background-color: transparent;
+   cursor: pointer;
+
+   &:hover {
+      color: #FEC110;
+      transition: all 0.3s ease 0s;
+   }
+}
+
+.menu-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: $color;
+   border-radius: 7px;
+   font-size: 13px;
+   padding: 12px 20px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   transition: all 0.2s ease 0s;
+
+   &:hover {
+      background-color: #fec210ad;
+   }
+}
+
+.menu-btn_active {
+   z-index: 4;
+   font-size: 16px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: $color;
+   padding: 50px 72.5px;
+   transition: all 0.1s ease 0s;
+   border-bottom-left-radius: 14px;
+   margin: 30px -130px 0 0;
+
+   &:hover {
+      background-color: #fec210d2;
+   }
+}
+
+.action-btn {
+   width: 12px;
+   height: 10px;
+   padding: 5px 0;
+   margin-left: 10px;
+   border: none;
+   outline: none;
+   background-color: transparent;
+   position: relative;
+
+   img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+   }
+}
+
+.client-box {
+   display: flex;
+   max-width: 100%;
+   min-height: 100%;
+   align-items: center;
+   justify-content: space-between;
+}
+
+@media (max-width:1280px) {
+   .menu-btn_active {
+      margin: 13px -130px 0 0;
+      padding: 30px 52.5px;
+   }
+
+   .menu-item {
+      padding: 16px 10px;
+   }
+}
+
+@media (max-width:1150px) {
+   .client-box {
+      position: relative;
+      padding-right: 10px;
+      flex-direction: row-reverse;
+   }
+
+   .menu-items {
+      display: none;
+   }
+
+   .menu-btn {
+      margin-right: 0px;
+      font-size: 13px;
+      padding: 12px 20px;
+   }
+
+   .menu-btn_active {
+      z-index: 3;
+      display: flex;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      border-radius: 7px;
+      transition: all 0.1s ease 0s;
+      margin: 0;
+   }
+
+}
+
+@media (max-width:460px) {
+   .client-box {
+      padding: 0;
+   }
+}

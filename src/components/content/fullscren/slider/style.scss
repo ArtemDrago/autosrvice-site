@@ -1,0 +1,89 @@
+.control-items {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   padding: 60px 130px 60px 40px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+}
+
+.carousel {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   object-fit: cover;
+   object-position: center;
+}
+
+.img {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.index {
+   color: white;
+   z-index: 2;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 38px;
+   line-height: 110%;
+   letter-spacing: -0.015em;
+   color: #FFFFFF;
+}
+
+.controls-container {
+   width: 125px;
+   height: 60px;
+   z-index: 1;
+   display: flex;
+   justify-content: space-between;
+}
+
+@media (max-width:900px) {
+   .control-items {
+      padding: 40px 52px;
+   }
+
+   .index {
+      font-size: 32px;
+      line-height: 110%;
+   }
+}
+
+@media (max-width:550px) {
+   .control-items {
+      padding: 15px;
+   }
+
+   .controls-container {
+
+      display: flex;
+      align-items: flex-end;
+   }
+
+   .control {
+      width: 50px;
+      height: 50px;
+   }
+
+   .index {
+      font-size: 24px;
+      line-height: 110%;
+   }
+}
+
+.full-control {
+   background-color: #fec210;
+
+   &:hover {
+      background-color: #fec210d2;
+   }
+}

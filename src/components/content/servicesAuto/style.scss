@@ -1,0 +1,41 @@
+.serv-auto {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 0px 0px 180px 0px;
+   width: 100%;
+   height: 100%;
+}
+
+.serv-title {
+   font-weight: 400;
+   font-size: 67px;
+   line-height: 95%;
+   margin-bottom: 60px;
+}
+
+.serv-carts {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+@media (max-width:950px) {
+   .serv-auto {
+      padding: 0px 0px 80px 0px;
+   }
+
+   .serv-title {
+      font-size: 34px;
+      line-height: 95%;
+      margin-bottom: 40px;
+   }
+}
+
+
+@media (max-width:770px) {
+   .serv-carts {
+      flex-direction: column;
+   }
+}
