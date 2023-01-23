@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.scss'
 import close from '../../sorce/icons/modal/close.svg'
-import ModalRecord from './modalRecord/ModalRecord';
 import ModalConsultation from './modalConsultation/ModalConsultation';
 
 function Modal({ setVisible, typeModal }) {
@@ -24,11 +23,10 @@ function Modal({ setVisible, typeModal }) {
                   <h2 className='myModal-title'>
                      {typeModal == 'record' ? 'Запись на сервис' : 'Перезвоним в течении часа'}
                   </h2>
-                  {typeModal == 'record' ?
-                     <ModalRecord setVisible={setVisible} />
-                     :
-                     <ModalConsultation setVisible={setVisible} />
-                  }
+                  <ModalConsultation
+                     setVisible={setVisible}
+                     typeModal={typeModal}
+                  />
                </div>
             </div>
          </div>

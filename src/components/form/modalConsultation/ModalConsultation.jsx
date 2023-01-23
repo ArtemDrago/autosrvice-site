@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.scss'
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from 'react-hook-form';
 import { schemaConsultate } from '../shema/schema';
 import { Form } from 'react-bootstrap';
-import { TextField } from '@mui/material';
+import { MenuItem, TextField, Select } from '@mui/material';
 import rigth from '../../../sorce/icons/modal/rigth.svg'
+import { Cars } from '../shema/data';
 
-function ModalConsultation({ setVisible }) {
-
+function ModalConsultation({ setVisible, typeModal }) {
    const { register, handleSubmit, formState: { errors } } = useForm({
       mode: "onBlur",
       resolver: yupResolver(schemaConsultate),
    })
+   const [curState, setCurState] = useState('')
+
+   const handleChange = (event) => {
+      console.log(event)
+      setCurState(event);
+   };
 
    const onSubmit = (data) => {
       console.log(data)
@@ -26,6 +32,7 @@ function ModalConsultation({ setVisible }) {
          <TextField
             {...register('name')}
             type='text'
+            label='Ваше имя'
             id='name'
             placeholder='Ваше имя *'
             name="name"
@@ -38,6 +45,7 @@ function ModalConsultation({ setVisible }) {
          <TextField
             {...register('phone')}
             type='text'
+            label='Контактный телефон'
             id='phone'
             placeholder='Контактный телефон *'
             name="phone"
@@ -47,13 +55,39 @@ function ModalConsultation({ setVisible }) {
             error={!!errors.phone}
             helperText={`${errors?.phone?.message || ''}`}
          />
+         {typeModal == 'record' &&
+            <Select
+               {...register('cars')}
+               id='cars'
+               name={curState}
+               onChange={(e) => handleChange(e.target.value)}
+               defaultValue={curState}
+               fullWidth
+               value={curState}
+               label="Age"
+               variant='outlined'
+            >
+               {Cars.map(el => <MenuItem key={el.id} value={el.title}>{el.desk}</MenuItem>)}
+            </Select>
+         }
          <TextField
             {...register('description')}
             id='description'
+            label={
+               typeModal == 'record' ?
+                  'Комментарий'
+                  :
+                  'Краткое описание проблемы'
+            }
             className='text-area'
             name="description"
             multiline
-            placeholder='Комментарий'
+            placeholder={
+               typeModal == 'record' ?
+                  'Комментарий'
+                  :
+                  'Краткое описание проблемы'
+            }
             margin='normal'
             variant='outlined'
             rows={3}
