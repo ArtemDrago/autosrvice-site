@@ -4,14 +4,14 @@
    background: #313232;
 }
 
-.min-width {
-   display: none;
-   width: 100%;
-   padding: 20px 0;
-   align-items: center;
-   justify-content: space-between;
-   border-top: 1px solid #B6B6B6;
-}
+// .min-width {
+//    display: none;
+//    width: 100%;
+//    padding: 20px 0;
+//    align-items: center;
+//    justify-content: space-between;
+//    border-top: 1px solid #B6B6B6;
+// }
 
 .max-width {
    width: 100%;
@@ -441,10 +441,6 @@
    }
 
    .max-width {
-      display: none;
-   }
-
-   .min-width {
-      display: flex;
+      padding: 20px 0;
    }
 }

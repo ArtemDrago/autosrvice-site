@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.scss'
 import vk from '../../sorce/icons/footer/vk.svg'
 import twit from '../../sorce/icons/footer/twit.svg'
@@ -7,6 +7,8 @@ import ut from '../../sorce/icons/footer/ut.svg'
 import to from '../../sorce/icons/footer/to.svg'
 
 function Footer() {
+   const windowInnerWidth = document.documentElement.clientWidth
+
    return (
       <footer className='footer'>
          <div className="container-main">
@@ -108,12 +110,23 @@ function Footer() {
                   </div>
                </div>
                <div className=" max-width">
-                  <div className="ps-footer">© 2022 Специализированный автоцентр</div>
-                  <div className="ps-footer">Дизайн и разработка - <span className='footer-company'>Media Army</span> </div>
-               </div>
-               <div className=" min-width">
-                  <div className="ps-footer">© 2022. Спец. автоцентр</div>
-                  <div className="ps-footer">Сайт от  - <span className='footer-company'>Media Army</span> </div>
+                  <div className="ps-footer">
+                     {windowInnerWidth <= 700 ?
+                        '© 2022. Спец. автоцентр'
+                        :
+                        '© 2022 Специализированный автоцентр'
+                     }
+                  </div>
+                  <div className="ps-footer">
+                     {windowInnerWidth <= 700 ?
+                        'Сайт от'
+                        :
+                        'Дизайн и разработка'
+                     } -
+                     <span className='footer-company'>
+                        Media Army
+                     </span>
+                  </div>
                </div>
             </div>
          </div>

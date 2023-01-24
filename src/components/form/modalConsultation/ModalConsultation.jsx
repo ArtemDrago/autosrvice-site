@@ -4,7 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from 'react-hook-form';
 import { schemaConsultate } from '../shema/schema';
 import { Form } from 'react-bootstrap';
-import { MenuItem, TextField, Select } from '@mui/material';
+import { MenuItem, TextField, Select, InputLabel, FormControl } from '@mui/material';
 import rigth from '../../../sorce/icons/modal/rigth.svg'
 import { Cars } from '../shema/data';
 
@@ -13,11 +13,10 @@ function ModalConsultation({ setVisible, typeModal }) {
       mode: "onBlur",
       resolver: yupResolver(schemaConsultate),
    })
-   const [curState, setCurState] = useState('')
+   const [cars, setCars] = useState('')
 
    const handleChange = (event) => {
-      console.log(event)
-      setCurState(event);
+      setCars(event);
    };
 
    const onSubmit = (data) => {
@@ -56,19 +55,29 @@ function ModalConsultation({ setVisible, typeModal }) {
             helperText={`${errors?.phone?.message || ''}`}
          />
          {typeModal == 'record' &&
-            <Select
-               {...register('cars')}
-               id='cars'
-               name={curState}
-               onChange={(e) => handleChange(e.target.value)}
-               defaultValue={curState}
-               fullWidth
-               value={curState}
-               label="Age"
-               variant='outlined'
-            >
-               {Cars.map(el => <MenuItem key={el.id} value={el.title}>{el.desk}</MenuItem>)}
-            </Select>
+            <FormControl fullWidth>
+               <InputLabel id="demo-simple-select-label">Марка автомобиля *</InputLabel>
+               <Select
+                  {...register('cars')}
+                  labelId="demo-simple-select-label"
+                  id='cars'
+                  name='cars'
+                  onChange={(e) => handleChange(e.target.value)}
+                  fullWidth
+                  value={cars}
+                  label="Марка автомобиля *"
+                  variant='outlined'
+               >
+                  {Cars.map(el => <MenuItem
+                     key={el.id}
+                     value={el.title}
+                  >
+                     {el.desk}
+                  </MenuItem>)
+                  }
+               </Select>
+
+            </FormControl>
          }
          <TextField
             {...register('description')}

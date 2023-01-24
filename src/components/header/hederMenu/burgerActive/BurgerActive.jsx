@@ -96,7 +96,6 @@ function BurgerActive() {
          <div className="confidentially1">
             Условия конфиденциальности
          </div>
-
       </section>
    );
 }
