@@ -23,6 +23,7 @@ function ModalConsultation({ setVisible, typeModal }) {
       console.log(data)
       setVisible(false)
    }
+
    return (
       <Form
          onSubmit={handleSubmit(onSubmit)}
@@ -43,14 +44,14 @@ function ModalConsultation({ setVisible, typeModal }) {
          />
          <TextField
             {...register('phone')}
-            type='text'
+            type='tel'
             label='Контактный телефон'
             id='phone'
             placeholder='Контактный телефон *'
             name="phone"
             variant='outlined'
-            margin='normal'
             fullWidth
+            margin='normal'
             error={!!errors.phone}
             helperText={`${errors?.phone?.message || ''}`}
          />
@@ -76,7 +77,6 @@ function ModalConsultation({ setVisible, typeModal }) {
                   </MenuItem>)
                   }
                </Select>
-
             </FormControl>
          }
          <TextField
