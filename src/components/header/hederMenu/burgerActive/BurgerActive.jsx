@@ -9,7 +9,6 @@ import link from '../../../../sorce/icons/link.svg'
 function BurgerActive() {
    return (
       <section className='content-burger'>
-
          <div className='mini-menu'>
             <div className='list-items'>
                <div className="column">
@@ -36,7 +35,7 @@ function BurgerActive() {
                </div>
             </div>
          </div>
-         <div className='contact-burger'>
+         <div className='contact-burger ps'>
             <h2 className='burger-phone'>+7 (999) 123-45-67</h2>
             <a className="burger-mail" href='/#'>
                info@example.ru
@@ -72,6 +71,9 @@ function BurgerActive() {
                   <img src={youTube} alt="" />
                </a>
             </div>
+            <div className="confidentially">
+               <span className='confidentially_text'> Условия конфиденциальности</span>
+            </div>
          </div>
          <div className="contact-burger">
             <h3 className='autoservices'>Автоцентры</h3>
@@ -89,12 +91,6 @@ function BurgerActive() {
                <span className='link-person_text'>Личный кабинет</span>
                <img src={link} />
             </button>
-            <div className="confidentially">
-               Условия конфиденциальности
-            </div>
-         </div>
-         <div className="confidentially1">
-            Условия конфиденциальности
          </div>
       </section>
    );

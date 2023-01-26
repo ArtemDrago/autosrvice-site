@@ -1,5 +1,5 @@
 import React from 'react';
-import { advCard } from '../../data';
+import { advCard } from '../../../data';
 import AdvIconCart from './advIconCart/AdvIconCart';
 import './style.scss'
 
@@ -17,7 +17,6 @@ function AdvanturesInfo() {
                <p className="text-advInfo">
                   Подразделение нашей компании СЕРТИФИЦИРОВАННО - это позволяет производить обслуживание вашего автомобиля С СОХРАНЕНИЕМ ГАРАНТИИ.
                </p>
-
             </div>
             <div className="advInfo-column">
                {advCard.map(el =>

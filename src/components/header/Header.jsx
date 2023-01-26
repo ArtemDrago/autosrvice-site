@@ -5,6 +5,7 @@ import Group from '../../sorce/icons/Group.png'
 import HeaderMenu from './hederMenu/HeaderMenu';
 import Services from './hederMenu/services/Services';
 import BurgerActive from './hederMenu/burgerActive/BurgerActive';
+import { Outlet } from 'react-router-dom';
 
 function Header({ visible, setVisible, setTypeModal }) {
    const [opens, setOpens] = useState(false)
@@ -38,6 +39,7 @@ function Header({ visible, setVisible, setTypeModal }) {
          {
             openBurger && <BurgerActive />
          }
+         <Outlet />
       </>
    );
 }
