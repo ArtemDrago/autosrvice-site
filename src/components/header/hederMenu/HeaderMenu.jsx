@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './style.scss'
 import open from '../../../sorce/icons/line.png'
 import close from '../../../sorce/icons/lineClose.png'
+import { ModalContext } from '../../../context/context';
 
-function HeaderMenu({ opens, setOpens, openBurger, setOpenBurger, setVisible, visible, setTypeModal }) {
+function HeaderMenu({ opens, setOpens, openBurger, setOpenBurger }) {
+   const { visible, setVisible, setTypeModal } = useContext(ModalContext)
 
    const openServices = () => {
       setOpens(!opens)

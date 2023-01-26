@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/header/Header';
 import MainComponent from './components/MainComponent/MainComponent';
+import { ModalContext } from './context/context';
 import './style/App.scss';
 
 function App() {
@@ -9,31 +10,28 @@ function App() {
   const [typeModal, setTypeModal] = useState('')
 
   return (
-    <div className="page-container">
-      <Routes>
-        <Route
-          path='/'
-          element={
-            <Header
-              visible={visible}
-              setVisible={setVisible}
-              setTypeModal={setTypeModal}
-            />
-          } >
+    <ModalContext.Provider value={{
+      visible,
+      setVisible,
+      typeModal,
+      setTypeModal
+    }}>
+      <div className="page-container">
+        <Routes>
           <Route
             path='/'
-            element={<MainComponent
-              visible={visible}
-              setVisible={setVisible}
-              typeModal={typeModal}
-              setTypeModal={setTypeModal}
-            />}
-          />
+            element={
+              <Header />
+            } >
+            <Route
+              path='/'
+              element={<MainComponent />}
+            />
 
-        </Route>
-      </Routes>
-
-    </div>
+          </Route>
+        </Routes>
+      </div>
+    </ModalContext.Provider>
   );
 }
 

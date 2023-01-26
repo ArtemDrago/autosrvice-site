@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './style.scss'
 import rigth from '../../../sorce/icons/fullscreen/rigth.svg'
+import { ModalContext } from '../../../context/context';
 
-function Consultation({ setVisible, visible, setTypeModal }) {
+function Consultation() {
+   const { visible, setVisible, setTypeModal } = useContext(ModalContext)
 
    const openModal = () => {
       setVisible(!visible)
       setTypeModal('consultation')
    }
+
    return (
       <section className='consultation-container'>
          <div className="container-main ">

@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './style.scss'
 import close from '../../sorce/icons/modal/close.svg'
 import ModalConsultation from './modalConsultation/ModalConsultation';
+import { ModalContext } from '../../context/context';
 
-function Modal({ setVisible, typeModal }) {
-
+function Modal() {
+   const { setVisible, typeModal } = useContext(ModalContext)
    return (
       <div className='my-modal'
          onClick={() => setVisible(false)}

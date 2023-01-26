@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 
 import AdvanturesInfo from '../content/strengthsOfTheCompany/AdvanturesInfo';
 import AutoMark from '../content/autoMark/AutoMark';
@@ -14,10 +14,10 @@ import Advertisement from '../content/advertisement/Advertisement';
 import Modal from '../form/Modal';
 
 import '../MainComponent/style.scss'
+import { ModalContext } from '../../context/context';
 
-
-function MainComponent({ visible, setVisible, setTypeModal, typeModal }) {
-
+function MainComponent() {
+   const { visible } = useContext(ModalContext)
    return (
       <>
          <section className='container-page '>
@@ -29,19 +29,11 @@ function MainComponent({ visible, setVisible, setTypeModal, typeModal }) {
             <Stocks />
             <Reviews />
             <BlockMap />
-            <Consultation
-               visible={visible}
-               setVisible={setVisible}
-               setTypeModal={setTypeModal}
-            />
+            <Consultation />
             <Advertisement />
          </section>
          <Footer />
-         {visible && <Modal
-            typeModal={typeModal}
-            setVisible={setVisible}
-            setTypeModal={setTypeModal}
-         />}
+         {visible && <Modal />}
       </>
    );
 }

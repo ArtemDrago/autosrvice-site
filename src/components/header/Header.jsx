@@ -7,7 +7,7 @@ import Services from './hederMenu/services/Services';
 import BurgerActive from './hederMenu/burgerActive/BurgerActive';
 import { Outlet } from 'react-router-dom';
 
-function Header({ visible, setVisible, setTypeModal }) {
+function Header() {
    const [opens, setOpens] = useState(false)
    const [openBurger, setOpenBurger] = useState(false)
    return (
@@ -27,9 +27,6 @@ function Header({ visible, setVisible, setTypeModal }) {
                   setOpens={setOpens}
                   openBurger={openBurger}
                   setOpenBurger={setOpenBurger}
-                  visible={visible}
-                  setVisible={setVisible}
-                  setTypeModal={setTypeModal}
                />
             </header>
          </div>

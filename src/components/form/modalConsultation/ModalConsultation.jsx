@@ -56,7 +56,7 @@ function ModalConsultation({ setVisible, typeModal }) {
             helperText={`${errors?.phone?.message || ''}`}
          />
          {typeModal == 'record' &&
-            <FormControl fullWidth>
+            <FormControl fullWidth margin='normal'>
                <InputLabel id="demo-simple-select-label">Марка автомобиля *</InputLabel>
                <Select
                   {...register('cars')}
