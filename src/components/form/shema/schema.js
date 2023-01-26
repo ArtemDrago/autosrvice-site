@@ -9,7 +9,7 @@ export const schemaConsultate = yup.object().shape({
       .required("Введите ваше имя"),
    phone: yup
       .string()
-      .matches(phoneRegExp, "+7 *** *** ** **")
+      .matches(phoneRegExp, "Номер телефона")
       .required("Введите ваш номер"),
    description: yup
       .string()
