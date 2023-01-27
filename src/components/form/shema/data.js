@@ -30,3 +30,12 @@ export const Cars = [
       desk: 'Другое'
    },
 ]
+
+export const markCar = [
+   'volvo',
+   'bmw',
+   'audi',
+   'volkswagen',
+   'skoda',
+   'another'
+]

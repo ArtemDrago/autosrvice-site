@@ -8,7 +8,7 @@ function ServicesAuto() {
       <section className='serv-auto '>
          <div className="container-main">
             <h3 className='serv-title'>
-               Услуги автосервиса
+               <a name='carService'>Услуги автосервиса</a>
             </h3>
             <div className='serv-carts'>
                {servCard.map(el =>

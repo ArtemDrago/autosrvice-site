@@ -26,8 +26,10 @@ function FullScren() {
                </div>
             </div>
             <button className='look-serv'>
-               {windowInnerWidth <= 745 ? 'Услуги автосервиса' : 'Смотреть услуги'}
-               <img src={bottom} />
+               <a href='#carService' className='look-serv_link'>
+                  {windowInnerWidth <= 745 ? 'Услуги автосервиса' : 'Смотреть услуги'}
+                  <img src={bottom} />
+               </a>
             </button>
          </div>
          <div className="full-collumn">

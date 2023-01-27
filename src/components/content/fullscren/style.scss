@@ -85,6 +85,17 @@ $color: #FEC110;
    background: #FEC110;
    border-radius: 7px;
 
+   &_link {
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 125%;
+      color: #2C2C2C;
+
+      &:hover {
+         color: #000;
+      }
+   }
+
    img {
       margin-left: 15px;
    }

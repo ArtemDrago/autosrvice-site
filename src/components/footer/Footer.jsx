@@ -10,7 +10,7 @@ function Footer() {
    const windowInnerWidth = document.documentElement.clientWidth
 
    return (
-      <footer className='footer'>
+      <footer className='footer' >
          <div className="container-main">
             <div className="footer-container">
                <div className="footer-content">

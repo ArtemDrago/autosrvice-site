@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './style.scss'
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from 'react-hook-form';
-import { schemaConsultate } from '../shema/schema';
+import { schemaAuto, schemaConsultate } from '../shema/schema';
 import { Form } from 'react-bootstrap';
 import { MenuItem, TextField, Select, InputLabel, FormControl } from '@mui/material';
 import rigth from '../../../sorce/icons/modal/rigth.svg'
@@ -11,8 +11,9 @@ import { Cars } from '../shema/data';
 function ModalConsultation({ setVisible, typeModal }) {
    const { register, handleSubmit, formState: { errors } } = useForm({
       mode: "onBlur",
-      resolver: yupResolver(schemaConsultate),
+      resolver: typeModal === 'record' ? yupResolver(schemaAuto) : yupResolver(schemaConsultate),
    })
+
    const [cars, setCars] = useState('')
 
    const handleChange = (event) => {
@@ -66,8 +67,9 @@ function ModalConsultation({ setVisible, typeModal }) {
                   onChange={(e) => handleChange(e.target.value)}
                   fullWidth
                   value={cars}
-                  label="Марка автомобиля *"
+                  label="марка автомобиля *"
                   variant='outlined'
+                  error={!!errors.cars}
                >
                   {Cars.map(el => <MenuItem
                      key={el.id}

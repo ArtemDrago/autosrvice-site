@@ -4,6 +4,8 @@ $color: #FEC110;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   color: #2C2C2C;
 }
@@ -32,18 +34,6 @@ button {
   z-index: 4;
 }
 
-@media (max-width:1024px) {
-  .container-main {
-    padding: 0px 52px;
-  }
-}
-
-@media (max-width:550px) {
-  .container-main {
-    padding: 0px 15px;
-  }
-}
-
 .control {
   width: 60px;
   height: 60px;
@@ -68,6 +58,19 @@ button {
 
   &:hover {
     background: #fec210cf;
+  }
+}
+
+
+@media (max-width:1024px) {
+  .container-main {
+    padding: 0px 52px;
+  }
+}
+
+@media (max-width:550px) {
+  .container-main {
+    padding: 0px 15px;
   }
 }
 
