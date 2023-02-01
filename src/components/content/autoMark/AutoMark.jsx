@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss'
+import './styleAutoMark.scss'
 import mark from '../../../sorce/icons/mark/avto.png'
 
 function AutoMark() {

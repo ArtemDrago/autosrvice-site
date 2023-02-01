@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss'
+import './styleServCart.scss'
 import right from '../../../../sorce/icons/fullscreen/rigth.svg'
 
 

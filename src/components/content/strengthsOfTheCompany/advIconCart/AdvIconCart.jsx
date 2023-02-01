@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss'
+import './styleAdvIconCart.scss'
 
 function AdvIconCart({ data }) {
    return (

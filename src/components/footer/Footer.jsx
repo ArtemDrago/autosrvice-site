@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import './style.scss'
+import React from 'react';
+import './styleFooter.scss'
 import vk from '../../sorce/icons/footer/vk.svg'
 import twit from '../../sorce/icons/footer/twit.svg'
 import insta from '../../sorce/icons/footer/insta.svg'

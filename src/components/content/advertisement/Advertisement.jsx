@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss'
+import './styleAdvertisement.scss'
 import iphone from '../../../sorce/img/advertisement/13.png'
 import appstore from '../../../sorce/img/advertisement/appstore.png'
 import google from '../../../sorce/img/advertisement/google.png'

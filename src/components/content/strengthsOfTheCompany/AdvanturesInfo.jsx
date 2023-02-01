@@ -1,7 +1,7 @@
 import React from 'react';
 import { advCard } from '../../../data';
 import AdvIconCart from './advIconCart/AdvIconCart';
-import './style.scss'
+import './styleAdvanturesInfo.scss'
 
 function AdvanturesInfo() {
    return (

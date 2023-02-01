@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss'
+import './styleBurgerActive.scss'
 import vk from '../../../../sorce/icons/Vk.svg'
 import insta from '../../../../sorce/icons/insta.svg'
 import tvit from '../../../../sorce/icons/tvit.svg'

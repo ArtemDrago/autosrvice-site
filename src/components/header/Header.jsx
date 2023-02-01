@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../header/style.scss'
+import '../header/styleHeader.scss'
 import text from '../../sorce/icons/Vector.png'
 import Group from '../../sorce/icons/Group.png'
 import HeaderMenu from './hederMenu/HeaderMenu';

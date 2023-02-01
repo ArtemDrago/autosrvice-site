@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss'
+import './styleFullScreen.scss'
 import bottom from '../../../sorce/icons/fullscreen/bottom.svg'
 import Slider from './slider/Slider';
 

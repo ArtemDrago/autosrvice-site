@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss'
+import './styleStocks.scss'
 import StocksItem from './stocksItem/StocksItem';
 import left from '../../../sorce/img/sliderStocks/left.svg'
 

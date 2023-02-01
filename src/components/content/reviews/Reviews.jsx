@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { reviews } from '../../../data';
 import ReviewSlaider from './reviewSlaider/ReviewSlider';
-import './style.scss'
+import './styleReviews.scss'
 
 function Reviews() {
    const [midleRating, setMidleRating] = useState(0)

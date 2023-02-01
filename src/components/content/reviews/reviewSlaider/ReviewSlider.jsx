@@ -1,6 +1,6 @@
 import { Carousel } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
-import './style.scss'
+import './styleReviewSlider.scss'
 import { reviews } from '../../../../data';
 import { useMemo } from 'react';
 import left from '../../../../sorce/icons//review/left.svg'

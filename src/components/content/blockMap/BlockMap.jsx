@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './style.scss'
+import './styleBlockMap.scss'
 import img from '../../../sorce/img/Image1.png'
 import right from '../../../sorce/img/map/icon/right.svg'
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';

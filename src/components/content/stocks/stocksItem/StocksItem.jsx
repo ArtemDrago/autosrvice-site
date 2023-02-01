@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './style.scss'
+import './styleStocksItem.scss'
 import { stocks } from '../../../../data/index.js'
 import { Carousel } from 'react-bootstrap';
 import { useMemo } from 'react';

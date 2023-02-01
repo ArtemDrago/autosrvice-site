@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.scss'
+import './styleSlider.scss'
 import Carousel from 'react-bootstrap/Carousel';
 import left from '../../../../sorce/icons/fullscreen/left.svg'
 import rigth from '../../../../sorce/icons/fullscreen/rigth.svg'

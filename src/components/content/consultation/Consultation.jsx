@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import './style.scss'
+import './styleConsultation.scss'
 import rigth from '../../../sorce/icons/fullscreen/rigth.svg'
 import { ModalContext } from '../../../context/context';
 

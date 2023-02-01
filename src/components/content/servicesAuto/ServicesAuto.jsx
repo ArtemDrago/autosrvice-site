@@ -1,7 +1,7 @@
 import React from 'react';
 import { servCard } from '../../../data';
 import ServCart from './servCart/ServCart';
-import './style.scss'
+import './styleServicesAuto.scss'
 
 function ServicesAuto() {
    return (

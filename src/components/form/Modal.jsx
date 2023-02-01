@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import './style.scss'
+import './styleModal.scss'
 import close from '../../sorce/icons/modal/close.svg'
 import ModalConsultation from './modalConsultation/ModalConsultation';
 import { ModalContext } from '../../context/context';

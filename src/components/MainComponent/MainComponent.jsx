@@ -13,7 +13,7 @@ import FullScren from '../content/fullscren/FullScreen';
 import Advertisement from '../content/advertisement/Advertisement';
 import Modal from '../form/Modal';
 
-import '../MainComponent/style.scss'
+import '../MainComponent/styleMain.scss'
 import { ModalContext } from '../../context/context';
 
 function MainComponent() {

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import './style.scss'
+import './styleHeaderMenu.scss'
 import open from '../../../sorce/icons/line.png'
 import close from '../../../sorce/icons/lineClose.png'
 import { ModalContext } from '../../../context/context';

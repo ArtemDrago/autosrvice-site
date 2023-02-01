@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.scss'
+import './styleModalConsult.scss'
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from 'react-hook-form';
 import { schemaAuto, schemaConsultate } from '../shema/schema';

@@ -22,15 +22,15 @@ import user from '../sorce/img/sliderStocks/user.svg'
 export const image = [
    {
       id: 1,
-      pictures: one
+      pictures: one || ''
    },
    {
       id: 2,
-      pictures: two
+      pictures: two || ''
    },
    {
       id: 3,
-      pictures: free
+      pictures: free || ''
    },
 ];
 
@@ -38,22 +38,22 @@ export const servCard = [
    {
       id: 1,
       title: 'Ремонт автомобиля',
-      pictures: card1
+      pictures: card1 || ''
    },
    {
       id: 2,
       title: 'Плановое ТО',
-      pictures: card2
+      pictures: card2 || ''
    },
    {
       id: 3,
       title: 'Диагностика и ремонт',
-      pictures: card3
+      pictures: card3 || ''
    },
    {
       id: 4,
       title: 'Чип тюнинг',
-      pictures: card4
+      pictures: card4 || ''
    },
 ]
 
@@ -61,35 +61,35 @@ export const advCard = [
    {
       id: 1,
       title: 'Гарантия работы 1 год',
-      pictures: icon1
+      pictures: icon1 || ''
    },
    {
       id: 2,
       title: 'Квалифицированные сотрудники',
-      pictures: icon2
+      pictures: icon2 || ''
    },
    {
       id: 3,
       title: 'Комфортные зоны ожидания',
-      pictures: icon3
+      pictures: icon3 || ''
    },
    {
       id: 4,
       title: 'Современное оборудование',
-      pictures: icon4
+      pictures: icon4 || ''
    },
 ]
 export const stocks = [
    {
       id: 1,
       title: `Дарим 1000 бонусов за шиномонтаж и хранение`,
-      pictures: stock1,
+      pictures: stock1 || '',
       data: '11 апреля',
    },
    {
       id: 2,
       title: 'Специальное предложение для владельцев VOLVO XC 90',
-      pictures: stock2,
+      pictures: stock2 || '',
       data: '18 ноября',
    },
 ]
@@ -104,7 +104,7 @@ export const reviews = [
       autor: 'butyl1n_i',
       data: '23 декабря 2020',
       rating: 4.2,
-      star: star1,
+      star: star1 || '',
       user: user
    },
    {
@@ -120,7 +120,7 @@ export const reviews = [
       autor: 'butyl1n_i',
       data: '23 декабря 2020',
       rating: 5,
-      star: star2,
+      star: star2 || '',
       user: user
    },
 ]
