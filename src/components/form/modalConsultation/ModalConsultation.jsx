@@ -6,7 +6,7 @@ import { schemaAuto, schemaConsultate } from '../shema/schema';
 import { Form } from 'react-bootstrap';
 import { MenuItem, TextField, Select, InputLabel, FormControl } from '@mui/material';
 import rigth from '../../../sorce/icons/modal/rigth.svg'
-import { Cars } from '../shema/data';
+import { Cars } from '../shema/dataModal';
 
 function ModalConsultation({ setVisible, typeModal }) {
    const { register, handleSubmit, formState: { errors } } = useForm({

@@ -1,5 +1,5 @@
 import React from 'react';
-import { servCard } from '../../../data';
+import { servCard } from '../../../data/data';
 import ServCart from './servCart/ServCart';
 import './styleServicesAuto.scss'
 

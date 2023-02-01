@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { reviews } from '../../../data';
+import { reviews } from '../../../data/data';
 import ReviewSlaider from './reviewSlaider/ReviewSlider';
 import './styleReviews.scss'
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './styleStocksItem.scss'
-import { stocks } from '../../../../data/index.js'
+import { stocks } from '../../../../data/data.js'
 import { Carousel } from 'react-bootstrap';
 import { useMemo } from 'react';
 import left from '../../../../sorce/img/sliderStocks/left.svg'

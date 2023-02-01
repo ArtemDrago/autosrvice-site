@@ -3,7 +3,7 @@ import './styleSlider.scss'
 import Carousel from 'react-bootstrap/Carousel';
 import left from '../../../../sorce/icons/fullscreen/left.svg'
 import rigth from '../../../../sorce/icons/fullscreen/rigth.svg'
-import { image } from '../../../../data/index.js';
+import { image } from '../../../../data/data.js';
 import { useEffect } from 'react';
 
 function Slider() {

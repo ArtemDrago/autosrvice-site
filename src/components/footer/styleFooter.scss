@@ -107,6 +107,7 @@
 
       &:first-child {
          flex: 1 1 33.3%;
+         height: 367px;
       }
 
       &:last-child {
@@ -138,6 +139,7 @@
       background-color: #FEC110;
       color: #2C2C2C;
       padding: 15px 45.5px;
+      box-sizing: border-box;
 
       &:hover {
          border: 1px solid #FEC110;
@@ -150,6 +152,7 @@
       border: 1px solid #FEC110;
       color: white;
       padding: 15px 40px;
+      box-sizing: border-box;
 
       &:hover {
          background-color: #FEC110;
@@ -172,7 +175,6 @@
    justify-content: center;
    margin-bottom: 5px;
    border-radius: 7px;
-   border: 1px solid inherit;
 }
 
 .colum-colum {

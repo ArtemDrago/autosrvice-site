@@ -1,5 +1,5 @@
 import React from 'react';
-import { advCard } from '../../../data';
+import { advCard } from '../../../data/data';
 import AdvIconCart from './advIconCart/AdvIconCart';
 import './styleAdvanturesInfo.scss'
 
