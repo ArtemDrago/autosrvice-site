@@ -1,7 +1,7 @@
 import React from 'react';
 import './styleBurgerActive.scss'
-import vk from '../../../../sorce/icons/Vk.svg'
-import insta from '../../../../sorce/icons/Insta.svg'
+import vk from '../../../../sorce/icons/Vkontacte.svg'
+import insta from '../../../../sorce/icons/Instagram.svg'
 import tvit from '../../../../sorce/icons/tvit.svg'
 import youTube from '../../../../sorce/icons/youTube.svg'
 import link from '../../../../sorce/icons/link.svg'
